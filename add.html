@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Data</title>
+  <link rel="stylesheet" type="text/css" href="./styl.css">
+  <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="forms-container">
+      <div class="signin-signup">
+        <form id="add-form" method="post" action="add.php">
+          <h2 class="title">Add Product</h2>
+          <div class="input-field">
+            <i class="fas fa-box"></i>
+            <input type="text" name="name" placeholder="Product Name" required>
+          </div>
+          <div class="input-field">
+            <i class="fas fa-sort-amount-up"></i>
+            <input type="text" name="qty" placeholder="Quantity" required>
+          </div>
+          <div class="input-field">
+            <i class="fas fa-dollar-sign"></i>
+            <input type="text" name="price" placeholder="Price" required>
+          </div>
+          <input type="submit" value="Add" name="Submit" class="btn solid">
+        </form>
+      </div>
+    </div>
+    <div class="panels-container">
+      <div class="panel left-panel">
+        <div class="content">
+          <a href="index.php" class="btn home-btn">Home</a>
+          <a href="view.php" class="btn view-btn">View Products</a>
+          <a href="logout.php" class="btn logout-btn">Logout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./app.js"></script>
+</body>
+</html>
